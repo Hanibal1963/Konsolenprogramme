@@ -3,7 +3,7 @@
 ' © 2024 by Andreas Sauer
 '
 'Beschreibung:
-'Konsolenprogramm zum feststellen ob ein Computer im lokalen Netzwerk erreichbar ist
+'Konsolenprogramm zum feststellen ob ein Computer im lokalen Netzwerk erreichbar ist.
 '
 'Verwendung:
 'ServerCheck Computername

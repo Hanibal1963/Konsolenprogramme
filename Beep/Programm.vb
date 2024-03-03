@@ -3,12 +3,13 @@
 ' © 2024 by Andreas Sauer
 '
 ' Beschreibung: 
-' Konsolenprogramm zum ausgeben von Signaltönen
+' Konsolenprogramm zum ausgeben von Signaltönen.
 '
 ' Verwendung:
 ' Beep /n:[NN]
 '
-' Parameter NN: 0-99
+' Parameter NN:
+' Anzahl der Töne (0-99)
 '
 ' ****************************************************************************************************************
 '
