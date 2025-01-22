@@ -16,6 +16,7 @@ Beep /n:[NN]
 Parameter NN:
 Anzahl der Töne (0-99)
 ```
+
 ---
 
 ## ServerCheck
@@ -32,3 +33,4 @@ Ergebnis in der Errorlevel-Variable des Systems
 1 = Computer ist nicht erreichbar
 2 = fehlerhafte Kommandozeile
 ```
+
