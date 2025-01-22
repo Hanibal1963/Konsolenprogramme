@@ -11,7 +11,7 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("ServerCheck")>
 <Assembly: AssemblyDescription("Konsolenprogramm zum feststellen ob ein Computer im lokalen Netzwerk erreichbar ist.")>
-<Assembly: AssemblyCompany("Andreas Sauer")>
+<Assembly: AssemblyCompany("SchlumpfSoft")>
 <Assembly: AssemblyProduct("ServerCheck")>
 <Assembly: AssemblyCopyright("Copyright © Andreas Sauer 2024")>
 <Assembly: AssemblyTrademark("")>
@@ -32,8 +32,8 @@ Imports System.Runtime.InteropServices
 ' indem Sie "*" wie unten gezeigt eingeben:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.2024.0303.5")>
-<Assembly: AssemblyFileVersion("1.2024.0303.5")>
+<Assembly: AssemblyVersion("1.2024.03.05")>
+<Assembly: AssemblyFileVersion("1.2024.03.05")>
 <Assembly: NeutralResourcesLanguage("de-DE")>
 
 <assembly: AssemblyInformationalVersion("0.2024.0303.5")>
