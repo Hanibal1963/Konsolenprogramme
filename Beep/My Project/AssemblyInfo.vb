@@ -10,8 +10,8 @@ Imports System.Runtime.InteropServices
 ' Werte der Assemblyattribute überprüfen
 
 <Assembly: AssemblyTitle("Beep")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("Andreas Sauer")>
+<Assembly: AssemblyDescription("Konsolenprogramm zum ausgeben von Signaltönen.")>
+<Assembly: AssemblyCompany("SchlumpfSoft")>
 <Assembly: AssemblyProduct("Beep")>
 <Assembly: AssemblyCopyright("Copyright © Andreas Sauer 2024")>
 <Assembly: AssemblyTrademark("")>
@@ -32,8 +32,8 @@ Imports System.Runtime.InteropServices
 ' indem Sie "*" wie unten gezeigt eingeben:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.2024.0303.3")>
-<Assembly: AssemblyFileVersion("1.2024.0303.3")>
+<Assembly: AssemblyVersion("1.2024.03.03")>
+<Assembly: AssemblyFileVersion("1.2024.03.03")>
 <Assembly: NeutralResourcesLanguage("de-DE")>
 
 <assembly: AssemblyInformationalVersion("0.2024.0303.3")>
