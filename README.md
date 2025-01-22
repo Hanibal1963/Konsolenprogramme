@@ -11,7 +11,7 @@ Konsolenprogramm zum ausgeben von Signaltönen.
 
 ```
 Verwendung:
-Beep /n:[NN]
+Beep /n:NN
 
 Parameter NN:
 Anzahl der Töne (0-99)
@@ -32,5 +32,19 @@ Ergebnis in der Errorlevel-Variable des Systems
 0 = Computer ist erreichbar
 1 = Computer ist nicht erreichbar
 2 = fehlerhafte Kommandozeile
+```
+
+---
+
+## Wait
+
+Konsolenprogramm welches die Abarbeitung einer Batch Datei für eine festgelegte Zeit anhält.
+
+```
+Verwendung:
+Wait /n:NN
+
+Parameter NN:
+Wartezei in Sekunden (0-99)
 ```
 
