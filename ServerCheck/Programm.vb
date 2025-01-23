@@ -27,11 +27,11 @@ Module Programm
 	Private version As String
 	Private copyright As String
 
-	Sub Main(args As String())
-		'Programmheader anzeigen
-		ShowAppHeader()
+	Sub Main(Args As String())
 		'Anzahl der übergebenen Argumente prüfen
-		If args.Length = 0 Then
+		If Args.Length = 0 Then
+			'Programmheader anzeigen
+			ShowAppHeader()
 			'Fehler -> Fehler in der Kommandozeile
 			Console.WriteLine($"Fehler in der Kommandozeile!")
 			Console.WriteLine($"Es wurde kein Computer angegeben.")
@@ -40,7 +40,7 @@ Module Programm
 			Exit Sub
 		Else
 			'erstes Argument auslesen (Servername)
-			Dim server As String = args.First
+			Dim server As String = Args.First
 			'Prüfen ob Server online ist
 			Dim ping As New Ping
 			If ping.Send(server).Status = IPStatus.Success Then
