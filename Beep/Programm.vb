@@ -21,10 +21,10 @@ Module Programm
 	Private copyright As String
 
 	Sub Main(args As String())
-		'Programmheader anzeigen
-		ShowAppHeader()
 		'Anzahl der übergebenen Argumente prüfen
 		If args.Length = 0 Then
+			'Programmheader anzeigen
+			ShowAppHeader()
 			'Fehlermeldung anzeigen
 			Console.WriteLine($"Fehler in der Kommandozeile.")
 			Console.WriteLine($"Es wurden keine Parameter angegeben")
@@ -62,6 +62,8 @@ Module Programm
 					Exit Sub
 				End If
 			Else
+				'Programmheader anzeigen
+				ShowAppHeader()
 				'Argument ist fehlerhaft -> Fehlermeldung ausgeben
 				Console.WriteLine($"Fehler !")
 				Console.WriteLine($"Das angegebene Argument ""{Arg}"" ist fehlerhaft {vbCrLf}")
