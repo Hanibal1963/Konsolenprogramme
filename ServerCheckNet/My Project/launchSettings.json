@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ServerCheckNet": {
+      "commandName": "Project",
+      "commandLineArgs": "Wohnzimmer"
+    }
+  }
+}

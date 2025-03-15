@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SclumpfSoft</RootNamespace>
+    <TargetFrameworks>net8.0;net481</TargetFrameworks>
+    <PackageId>ServerCheck</PackageId>
+    <Version>1.2025.0315.1040</Version>
+    <Authors>Andreas Sauer</Authors>
+    <Company>SchlumpfSoft</Company>
+    <Copyright>(c) 2025 by Andreas Sauer</Copyright>
+    <Product>ServerCheck</Product>
+    <OptionStrict>On</OptionStrict>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net481|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net481|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+</Project>
