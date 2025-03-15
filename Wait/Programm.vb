@@ -103,10 +103,10 @@ Module Programm
 	End Sub
 
 	Private Sub ShowAppHeader()
-    name = My.Application.Info.AssemblyName
-    version = My.Application.Info.Version.ToString
-    copyright = My.Application.Info.Copyright
-    Console.WriteLine($"{name} V{version}{vbCrLf}{copyright}")
-  End Sub
+		name = My.Application.Info.AssemblyName
+		version = My.Application.Info.Version.ToString
+		copyright = My.Application.Info.Copyright
+		Console.WriteLine($"{name} V{version}{vbCrLf}{copyright}")
+	End Sub
 
 End Module

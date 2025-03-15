@@ -2,16 +2,16 @@
 ' Programm.vb
 ' © 2024 by Andreas Sauer
 '
-'Beschreibung:
-'Konsolenprogramm zum feststellen ob ein Computer im lokalen Netzwerk erreichbar ist.
+' Beschreibung:
+' Konsolenprogramm zum feststellen ob ein Computer im lokalen Netzwerk erreichbar ist.
 '
-'Verwendung:
-'ServerCheck Computername
+' Verwendung:
+' ServerCheck Computername
 '
-'Ergebnis in der Errorlevel-Variable des Systems
-'0 = Computer ist erreichbar
-'1 = Computer ist nicht erreichbar
-'2 = fehlerhafte Kommandozeile
+' Ergebnis in der Errorlevel-Variable des Systems
+' 0 = Computer ist erreichbar
+' 1 = Computer ist nicht erreichbar
+' 2 = fehlerhafte Kommandozeile
 '
 ' ****************************************************************************************************************
 
