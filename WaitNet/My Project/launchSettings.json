@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WaitNet": {
+      "commandName": "Project",
+      "commandLineArgs": "/n:10"
+    }
+  }
+}
