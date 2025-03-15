@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SchlumpfSoft</RootNamespace>
+    <TargetFrameworks>net8.0;net481</TargetFrameworks>
+    <AssemblyName>Beep</AssemblyName>
+    <OptionStrict>On</OptionStrict>
+    <Version>1.2025.0315.0940</Version>
+    <Company>SchlumpfSoft</Company>
+    <Copyright>(c) 2025 by Andreas Sauer</Copyright>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <AutoGenerateBindingRedirects>False</AutoGenerateBindingRedirects>
+    <Authors>Andreas Sauer</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net481|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net481|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+</Project>

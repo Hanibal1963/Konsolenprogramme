@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "BeepNet": {
+      "commandName": "Project",
+      "commandLineArgs": "/n:5",
+      "remoteDebugEnabled": false
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}
