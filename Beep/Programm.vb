@@ -15,11 +15,12 @@
 '
 Option Strict On
 
+Imports System.Reflection
+
 Module Programm
 
 	Private Const MaxTones As Integer = 99
 	Private Const MinTones As Integer = 0
-
 	Private name As String
 	Private version As String
 	Private copyright As String
@@ -32,7 +33,6 @@ Module Programm
 			'Fehlermeldung anzeigen wenn keine Argumente angegeben sind	und Ende
 			ShowErrorMsg($"Es wurden keine Parameter angegeben!")
 			Return
-
 		End If
 
 		'Wenn Argumente angegeben wurden -> 1. Argument einlesen
@@ -55,21 +55,16 @@ Module Programm
 				For n As Integer = 0 To Wert
 					Console.Beep()
 				Next
-
 			Else
 
 				' Ungültiger Zahlenwert
 				ShowErrorMsg($"Der angegebene Wert ist keine gültige Zahl.")
-
 			End If
-
 		Else
 
 			' Argument ist fehlerhaft -> Fehlermeldung ausgeben
 			ShowErrorMsg($"Das angegebene Argument ""{Arg}"" ist fehlerhaft!")
-
 		End If
-
 	End Sub
 
 	Private Sub ShowErrorMsg(Message As String)
@@ -84,10 +79,23 @@ Module Programm
 	End Sub
 
 	Private Sub ShowAppHeader()
-		name = My.Application.Info.AssemblyName
-		version = My.Application.Info.Version.ToString
-		copyright = My.Application.Info.Copyright
+		'name = My.Application.Info.AssemblyName
+		name = Assembly.GetExecutingAssembly().GetName().Name
+		'version = My.Application.Info.Version.ToString
+		version = Assembly.GetExecutingAssembly().GetName().Version.ToString()
+		'copyright = My.Application.Info.Copyright
+		copyright = GetAssemblyCopyright()
 		Console.WriteLine($"{name} V{version}{vbCrLf}{copyright}{vbCrLf}")
 	End Sub
+
+	Private Function GetAssemblyCopyright() As String
+		Dim assembly As Assembly = Assembly.GetExecutingAssembly()
+		Dim attributes As Object() = assembly.GetCustomAttributes(GetType(AssemblyCopyrightAttribute), False)
+		If attributes.Length > 0 Then
+			Dim copyrightAttribute As AssemblyCopyrightAttribute = CType(attributes(0), AssemblyCopyrightAttribute)
+			Return copyrightAttribute.Copyright
+		End If
+		Return String.Empty
+	End Function
 
 End Module

@@ -16,6 +16,7 @@
 ' ****************************************************************************************************************
 
 Imports System.Net.NetworkInformation
+Imports System.Reflection
 
 Module Programm
 
@@ -69,10 +70,23 @@ Module Programm
 	End Sub
 
 	Private Sub ShowAppHeader()
-		name = My.Application.Info.AssemblyName
-		version = My.Application.Info.Version.ToString
-		copyright = My.Application.Info.Copyright
+		'name = My.Application.Info.AssemblyName
+		name = Assembly.GetExecutingAssembly().GetName().Name
+		'version = My.Application.Info.Version.ToString
+		version = Assembly.GetExecutingAssembly().GetName().Version.ToString()
+		'copyright = My.Application.Info.Copyright
+		copyright = GetAssemblyCopyright()
 		Console.WriteLine($"{name} V{version}{vbCrLf}{copyright}")
 	End Sub
+
+	Private Function GetAssemblyCopyright() As String
+		Dim assembly As Assembly = Assembly.GetExecutingAssembly()
+		Dim attributes As Object() = assembly.GetCustomAttributes(GetType(AssemblyCopyrightAttribute), False)
+		If attributes.Length > 0 Then
+			Dim copyrightAttribute As AssemblyCopyrightAttribute = CType(attributes(0), AssemblyCopyrightAttribute)
+			Return copyrightAttribute.Copyright
+		End If
+		Return String.Empty
+	End Function
 
 End Module

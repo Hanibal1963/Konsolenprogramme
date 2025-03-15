@@ -48,3 +48,8 @@ Parameter NN:
 Wartezei in Sekunden (0-99)
 ```
 
+---
+
+## geplante Änderungen
+
+- alle Projekte auf NET 8.0 portieren
