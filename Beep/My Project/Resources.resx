@@ -125,12 +125,12 @@ Es wurden keine Parameter angegeben!</value>
   <data name="ErrorMsg_02" xml:space="preserve">
     <value>Fehler!
 Der angegebene Wert ist keine gültige Zahl!</value>
-    <comment>Fehlermeldung 02</comment>
+    <comment>Fehlermeldung für fehlerhafte Zahlenangabe.</comment>
   </data>
   <data name="ErrorMsg_03" xml:space="preserve">
     <value>Fehler!
 Das angegebene Argument ist fehlerhaft!</value>
-    <comment>Fehlermeldung 03</comment>
+    <comment>Fehlermeldung für fehlerhaftes Argument.</comment>
   </data>
   <data name="HelpString" xml:space="preserve">
     <value>Verwendung:
