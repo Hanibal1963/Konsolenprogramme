@@ -117,4 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ErrorMsg_01" xml:space="preserve">
+    <value>Fehler!
+Es wurden keine Parameter angegeben!</value>
+    <comment>Fehlermeldung für fehlende Parameter</comment>
+  </data>
+  <data name="HelpMsg" xml:space="preserve">
+    <value>Verwendung:
+ServerCheck Computername
+
+Beendigungscodes:
+ERRORLEVEL 0 -&gt; Computer ist online
+ERRORLEVEL 1 -&gt; Computer ist offline
+ERRORLEVEL 2 -&gt; Fehlerhafte Kommandozeile</value>
+    <comment>Hilfetext</comment>
+  </data>
 </root>

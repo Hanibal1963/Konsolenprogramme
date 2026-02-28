@@ -22,7 +22,7 @@ Namespace My.Resources
     '''<summary>
     '''  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0"),  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0"),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
      Global.Microsoft.VisualBasic.HideModuleNameAttribute()>  _
@@ -58,6 +58,31 @@ Namespace My.Resources
             Set
                 resourceCulture = value
             End Set
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Fehler!
+        '''Es wurden keine Parameter angegeben! ähnelt.
+        '''</summary>
+        Friend ReadOnly Property ErrorMsg_01() As String
+            Get
+                Return ResourceManager.GetString("ErrorMsg_01", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Verwendung:
+        '''ServerCheck Computername
+        '''
+        '''Beendigungscodes:
+        '''ERRORLEVEL 0 -&gt; Computer ist online
+        '''ERRORLEVEL 1 -&gt; Computer ist offline
+        '''ERRORLEVEL 2 -&gt; Fehlerhafte Kommandozeile ähnelt.
+        '''</summary>
+        Friend ReadOnly Property HelpMsg() As String
+            Get
+                Return ResourceManager.GetString("HelpMsg", resourceCulture)
+            End Get
         End Property
     End Module
 End Namespace
