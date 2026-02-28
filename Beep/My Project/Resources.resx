@@ -120,7 +120,7 @@
   <data name="ErrorMsg_01" xml:space="preserve">
     <value>Fehler!
 Es wurden keine Parameter angegeben!</value>
-    <comment>Fehlermeldung 01</comment>
+    <comment>Fehlermeldung für fehlende Parameter</comment>
   </data>
   <data name="ErrorMsg_02" xml:space="preserve">
     <value>Fehler!
