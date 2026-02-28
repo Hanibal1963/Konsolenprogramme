@@ -140,5 +140,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleHelperLib\ConsoleHelperLib.vbproj">
+      <Project>{aaf79b68-a712-4ada-950a-dc38be282345}</Project>
+      <Name>ConsoleHelperLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
