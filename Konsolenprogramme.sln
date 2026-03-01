@@ -5,6 +5,9 @@ VisualStudioVersion = 18.3.11512.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{8BA2074E-1175-4572-A168-6730FEA6CD8F}"
 	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		Base64.rar = Base64.rar
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
