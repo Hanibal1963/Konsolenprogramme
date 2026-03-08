@@ -19,13 +19,12 @@ Module Programm
     Private timeout As Boolean
 
     Sub Main(Args As String())
+
         'Anzahl der übergebenen Argumente prüfen
         If Args.Length = 0 Then
-
             ' Fehlermeldung anzeigen wenn keine Argumente angegeben sind	und Ende
-            ConsoleHelper.ShowErrorMsg(My.Application.Info, $"{My.Resources.ErrorMsg_01}", $"{My.Resources.HelpString}")
+            ConsoleHelper.ShowErrorMsg(My.Resources.ErrorMsg_01, My.Resources.HelpString, My.Application.Info)
             Return
-
         Else
             'wenn Argumente angegeben wurden -> 1. Argument einlesen
             Dim Arg As String = Args(0)
@@ -60,14 +59,10 @@ Module Programm
                     Exit Sub
                 End If
             Else
-
                 'Argument ist fehlerhaft -> Fehlermeldung ausgeben und Ende
-                ConsoleHelper.ShowErrorMsg(My.Application.Info, $"{My.Resources.ErrorMsg_02}", $"{My.Resources.HelpString}")
-
+                ConsoleHelper.ShowErrorMsg(My.Resources.ErrorMsg_02, My.Resources.HelpString, My.Application.Info)
                 Exit Sub
-
             End If
-
         End If
 
     End Sub
