@@ -21,32 +21,25 @@ Module Programm
 
         'Anzahl der übergebenen Argumente prüfen
         If Args.Length = 0 Then
-
-            ConsoleHelper.ShowErrorMsg(My.Application.Info, $"{My.Resources.ErrorMsg_01}", $"{My.Resources.HelpMsg}")
+            ConsoleHelper.ShowErrorMsg(My.Resources.ErrorMsg_01, My.Resources.HelpMsg, My.Application.Info)
             Environment.ExitCode = ERROR_BAD_COMMANDLINE
             Exit Sub
-
         Else
-
-            Dim server As String = Args.First ' erstes Argument auslesen (Servername)
-            Dim ping As New System.Net.NetworkInformation.Ping ' Prüfen ob Server online ist
-
+            ' erstes Argument auslesen (Servername)
+            Dim server As String = Args.First
+            ' Prüfen ob Server online ist
+            Dim ping As New System.Net.NetworkInformation.Ping
             If ping.Send(server).Status = System.Net.NetworkInformation.IPStatus.Success Then
-
                 ' Server ist online ->
                 Console.WriteLine($"{server} ist online.")
                 Environment.ExitCode = ERROR_SERVER_OK
                 Exit Sub
-
             Else
-
                 ' Server ist nicht online ->
                 Console.WriteLine($"{server} ist nicht online.")
                 Environment.ExitCode = ERROR_SERVER_DOWN
                 Exit Sub
-
             End If
-
         End If
 
     End Sub
