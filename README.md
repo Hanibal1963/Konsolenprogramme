@@ -65,6 +65,23 @@ Power /opt
 /hibernate -> Ruhezustand
 ```
 
+## CdRom
+
+Kommandozeilentool mit Funktionen für CD-Laufwerke.
+
+```Text
+Verwendung:
+CdRom /opt:[LW]
+[LW] ist der Laufwerksbuchstabe eines CD-Laufwerks (z.B. D, E, F, ...).
+/opt kann einen der folgenden Werte haben:
+/exist -> Prüft ob ein CD-Laufwerk mit dem angegebenen Buchstaben existiert.
+/open -> Öffnet die Schublade des CD-Laufwerks mit dem angegebenen Buchstaben.
+/close -> Schließt die Schublade des CD-Laufwerks mit dem angegebenen Buchstaben.
+Es werden folgende ERRORLEVEL zurückgegeben:
+ERRORLEVEL 0 -> CD-Laufwerk existiert.
+ERRORLEVEL 1 -> CD-Laufwerk existiert nicht oder ungültiger Buchstabe.
+```
+
 ## geplante Änderungen
 
 - z.Zt. keine
