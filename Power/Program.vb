@@ -21,18 +21,15 @@ Module Program
         ' Anzahl der übergebenen Argumente prüfen
         If Args.Length = 0 Then
             ' Fehlermeldung anzeigen wenn keine Argumente angegeben sind	und Ende
-            ConsoleHelper.ShowErrorMsg(My.Application.Info, $"{My.Resources.ErrorMsg_01}", $"{My.Resources.HelpMsg}")
+            ConsoleHelper.ShowErrorMsg(My.Resources.ErrorMsg_01, My.Resources.HelpMsg, My.Application.Info)
             Return
-
         ElseIf Args.Length = 1 Then
             ' Parameter prüfen
             ScanArgs(Args(0))
-
         ElseIf Args.Length > 1 Then
             ' Fehlermeldung anzeigen wenn zu viele Argumente angegeben sind	und Ende
-            ConsoleHelper.ShowErrorMsg(My.Application.Info, $"{My.Resources.ErrorMsg_02}", $"{My.Resources.HelpMsg}")
+            ConsoleHelper.ShowErrorMsg(My.Resources.ErrorMsg_02, My.Resources.HelpMsg, My.Application.Info)
             Return
-
         End If
 
     End Sub
@@ -67,7 +64,7 @@ Module Program
 
             Case Else
                 ' Fehlermeldung anzeigen wenn ungültiger Parameter angegeben ist	und Ende
-                ConsoleHelper.ShowErrorMsg(My.Application.Info, $"{My.Resources.ErrorMsg_03}", $"{My.Resources.HelpMsg}")
+                ConsoleHelper.ShowErrorMsg(My.Resources.ErrorMsg_03, My.Resources.HelpMsg, My.Application.Info)
                 Return
 
         End Select
