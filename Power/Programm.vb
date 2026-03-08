@@ -14,7 +14,7 @@
 ' - /hibernate -> Ruhezustand
 ' --------------------------------------------------------------------------------------------------------
 
-Module Program
+Module Programm
 
     Sub Main(Args As String())
 
