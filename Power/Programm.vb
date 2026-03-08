@@ -38,30 +38,18 @@ Module Programm
 
         Select Case Arg.ToLower()
 
-            Case "/logoff"
-                ' Benutzer abmelden
+            Case "/logoff" ' Benutzer abmelden
                 WindowsController.ExitWindows(RestartOptions.LogOff, False)
-
-            Case "/poweroff"
-                ' Herunterfahren und ausschalten
+            Case "/poweroff" ' Herunterfahren und ausschalten
                 WindowsController.ExitWindows(RestartOptions.PowerOff, False)
-
-            Case "/shutdown"
-                ' Herunterfahren und ausschalten
+            Case "/shutdown" ' Herunterfahren und ausschalten
                 WindowsController.ExitWindows(RestartOptions.ShutDown, False)
-
-            Case "/reboot"
-                ' Herunterfahren und neu starten
+            Case "/reboot" ' Herunterfahren und neu starten
                 WindowsController.ExitWindows(RestartOptions.Reboot, False)
-
-            Case "/suspend"
-                ' Energiesparmodus
+            Case "/suspend" ' Energiesparmodus
                 WindowsController.ExitWindows(RestartOptions.Suspend, False)
-
-            Case "/hibernate"
-                ' Ruhezustand
+            Case "/hibernate" ' Ruhezustand
                 WindowsController.ExitWindows(RestartOptions.Hibernate, False)
-
             Case Else
                 ' Fehlermeldung anzeigen wenn ungültiger Parameter angegeben ist	und Ende
                 ConsoleHelper.ShowErrorMsg(My.Resources.ErrorMsg_03, My.Resources.HelpMsg, My.Application.Info)
